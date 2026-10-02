@@ -1,0 +1,24 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main (){
+	const int centinela = -1;
+	float nota, contador = 0, suma= 0;
+	cout <<"Intrduzca -1 para salir: ";
+	cin>> nota;
+	while (nota != centinela){
+		contador++;
+		suma += nota;
+		cout << "Introduzca la siguiente nota:";
+		cin >> nota;
+		// fin de while
+	}
+	if (contador >0)
+		cout << "media = " << suma / contador << endl;
+	else 
+		cout << " no hay notas ";
+	system ("PAUSE");
+	return 0;
+	
+}
